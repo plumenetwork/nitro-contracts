@@ -106,6 +106,8 @@ interface ArbSys {
             bytes32[] memory partials
         );
 
+    function sayHi() external view returns(string memory);
+
     /**
      * @notice creates a send txn from L2 to L1
      * @param position = (level << 192) + leaf = (0 << 192) + leaf = leaf
