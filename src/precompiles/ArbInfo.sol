@@ -10,6 +10,9 @@ interface ArbInfo {
     /// @notice Retrieves an account's balance
     function getBalance(address account) external view returns (uint256);
 
+    /// @notice Retrieves an account's balance with reduced gas costs
+    function getBalanceCustom(address account) external view returns (uint256);
+
     /// @notice Retrieves a contract's deployed code
     function getCode(address account) external view returns (bytes memory);
 }
