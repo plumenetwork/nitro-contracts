@@ -7,6 +7,8 @@ pragma solidity >=0.4.21 <0.9.0;
  */
 interface ArbHi {
     function sayHi() external returns(string memory);
+    function getNumber() external view returns(uint64);
+    function setNumber(uint64) external;
 
     event Hi(address indexed caller);
 }
